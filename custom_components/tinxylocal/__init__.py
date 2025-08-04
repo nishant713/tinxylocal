@@ -16,7 +16,7 @@ from .hub import TinxyLocalHub
 _LOGGER = logging.getLogger(__name__)
 
 # List the platforms that this integration will support.
-PLATFORMS: list[Platform] = [Platform.SWITCH, Platform.NUMBER]
+PLATFORMS: list[Platform] = [Platform.SWITCH, Platform.NUMBER, Platform.LOCK]
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
